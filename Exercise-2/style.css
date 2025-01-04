@@ -18,6 +18,7 @@ The fourth element: a light green background, a font size of 24px, and bold */
 }
 
 #green {
+    background-color: #98e379;
     background-color: hsl(102, 65%, 68%);
     font-weight: bold;
 }
