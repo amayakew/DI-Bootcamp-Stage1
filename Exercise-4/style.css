@@ -1,0 +1,10 @@
+.avatar.proportioned {
+    height: auto;
+    /* height:auto in this case maintain the image's aspect ratio, so HEIGHT ajusts based on WIDTH */
+    width: 300px;
+}
+
+.avatar.distorted {
+    height: 400px;
+    width: 200px;
+}
