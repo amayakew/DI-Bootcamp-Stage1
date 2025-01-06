@@ -1,0 +1,85 @@
+/* .para,
+.small-para {
+  color: hsl(0, 100%, 50%);
+}
+
+.small-para {
+  font-size: 14px;
+}
+
+.para {
+  font-size: 22px;
+}
+
+.confirm {
+  background: green;
+  color: white;
+  font-weight: bold;
+} 
+
+.button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+.child {
+  color: red;
+  font-size: 14px;
+}
+
+div.text {
+  color: green;
+  font-size: 22px;
+} */
+
+.para,
+.small-para {
+  color: hsl(0, 100%, 50%);
+}
+
+.para {
+  font-size: 22px;
+}
+
+.small-para {
+    font-size: 14px;
+}
+
+/* .small-para should be written after .para according to the order rules
+OR 
+we should add p selector before .small-para written before .para to make it's specificity higher */
+
+.confirm {
+  background: green;
+  color: white;
+  font-weight: bold;
+} 
+
+.cancel {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.button {
+    font-size: 20px;
+}
+
+/* we can save order of this two selectors, leave .button instead .cancel, but change .confirm to #confirm-button,
+because id specificity is stronger than class, or to .button.confirm because 2 classes stronger than one
+OR
+we can change places of this elements, .confirm bellow .button (order rules) */
+
+.text {
+    color: green;
+    font-size: 22px;
+}
+
+.child {
+  color: red;
+  font-size: 14px;
+}
+
+/* change the order, add another selector div to .child to create a descendant combinator. The specificity would be tied with the div.text selector and it would come down to rule order, and if we only moved it the div.text selector would still have a higher specificity
+OR
+maintain the order but add .text bebore .child, so 2 classes higher than element and class */
