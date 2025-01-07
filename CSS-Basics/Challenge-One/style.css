@@ -1,0 +1,29 @@
+body {
+    background-color: #16A2DF;
+    font-family: sans-serif;
+}
+
+div#wrap {
+    width: 820px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    line-height: 25px;
+    padding: 0;
+}
+
+/* ul - block element with default padding */
+
+li::first-letter {
+    font-size: 28px;
+}
+
+/* ::first-letter - pseudo element, while pseudo class with one : */
+
+/* pseudo class - special regime of the element */
