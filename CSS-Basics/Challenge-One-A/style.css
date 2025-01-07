@@ -1,1 +1,46 @@
+body {
+    background-color: #DE9941;
+    font-family: sans-serif;
+}
 
+div#wrap {
+    background-color: blanchedalmond;
+    width: 600px;
+    margin: 0 auto;
+    border: 3px;
+    border-style: dashed;
+}
+
+h1 {
+    margin: 0;
+    border-bottom: 3px;
+    border-bottom-style: dashed;
+    text-align: center;
+    font-size: 28px;
+    font-style: italic ;
+    font-weight: 850;
+}
+
+p {
+    text-align: justify;
+    font-size: 14px;
+    padding: 0 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    line-height: 25px;
+    font-style: italic;
+}
+
+li::first-letter {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+p.copyright {
+    text-align: center;
+    font-size: 12px;
+}
