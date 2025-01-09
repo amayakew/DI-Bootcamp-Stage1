@@ -1,0 +1,50 @@
+body {
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+}
+
+#wrap {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#header {
+    background-color: green;
+    height: 80px;
+    margin-top: 45px;
+}
+
+#flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.pic, .color {
+    width: 30%;
+    height: 235px;
+    margin-top: 15px;
+}
+
+img {
+    width: 100%;
+    height: inherit;
+}
+
+#header, .color {
+    border: 3px solid black;
+}
+
+.one {
+    background-color: orange;
+}
+
+.two {
+    background-color: lightcoral;
+}
+
+.three {
+    background-color: lightskyblue;
+}
