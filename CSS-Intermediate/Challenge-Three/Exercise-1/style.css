@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#wrap {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+#flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 500px;
+}
+
+#footer {
+    background-color: lightgoldenrodyellow;
+    width: 90%;
+    align-self: center;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.one {
+    background-color: lightsalmon;
+    width: 20%;
+}
+
+.two {
+    background-color: lightskyblue;
+    width: 65%;
+}
+
+.one, .two, #footer {
+    border: 2px solid black;
+    height: 90px;
+}
