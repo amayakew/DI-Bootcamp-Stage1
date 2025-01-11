@@ -14,7 +14,7 @@ h1 {
 .right_arm, 
 .left_leg, 
 .right_leg {
-     background-color: #5f93e8;
+     background-color:bisque;
 }
 
 .head { 
@@ -50,15 +50,40 @@ h1 {
     margin-right: 10px; 
 } 
 
+.left_arm:hover {
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    transform: rotate(40deg);    
+}
+
 .right_arm { 
     margin-left: 10px; 
 } 
 
+.right_arm:hover {
+    -webkit-transform: rotate(320deg);
+    -moz-transform: rotate(320deg);
+    -o-transform: rotate(320deg);
+    -ms-transform: rotate(320deg);
+    transform: rotate(320deg);    
+}
+
+
 .torso { 
+    background-image: url(https://i.pinimg.com/736x/f5/7a/cd/f57acd525c15fa16d7b23d29637847f6.jpg);
+    background-size: 100% 120%;
     width: 200px; 
     height: 200px;
-    border-radius: 0 0 50px 50px; 
+    border-radius: 0 0 50px 50px;
+    z-index: 2; 
 } 
+
+.torso:hover {
+    background-image: url(https://m.media-amazon.com/images/S/aplus-media-library-service-media/63a4b7ed-12b0-460f-9c63-9ddc13e03339.__CR167,0,2667,2000_PT0_SX600_V1___.jpg);
+    background-size: 110% 100%;
+}
 
 .lower_body { 
     width: 200px; 
@@ -91,23 +116,41 @@ h1 {
     margin-left: 30px; 
 }
 
+.right_leg:hover {
+    -webkit-transform: rotate(340deg);
+    -moz-transform: rotate(340deg);
+    -o-transform: rotate(340deg);
+    -ms-transform: rotate(340deg);
+    transform: rotate(340deg);
+}
+
 .left_eye, .right_eye { 
     width: 20px; 
     height: 20px; 
     border-radius: 15px; 
-    background-color: white;  
+    background-color: black;  
 } 
 
 .left_eye { 
     /* These properties are new and you haven't encountered
     in this course. Check out CSS Tricks to see what it does! */
     position: relative; 
-    top: 100px; 
+    top: 80px; 
     left: 40px; 
 } 
 
 .right_eye { 
     position: relative; 
-    top: 100px; 
+    top: 80px; 
     left: 120px; 
+}
+
+.smile {
+    position: relative;
+    background-color: palevioletred;
+    width: 40px;
+    height: 15px;
+    top:100px;
+    left: 75px;
+    border-radius: 5px 5px 50px 50px;
 }
