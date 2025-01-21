@@ -1,0 +1,435 @@
+* {
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.wrap {
+    flex: 1;
+    scroll-behavior: smooth;
+}
+
+.navbarContainer, .infoBlock, .navLink {
+    background-color: black;
+    color: #DAD9D9;
+    align-items: center;
+}
+
+.historyBlock, .carsBlock, .contactBlock {
+    padding: 30px;
+    padding-top: 60px;
+    background-color: #DAD9D9;
+}
+
+.driversBlock, .factsBlock {
+    padding: 30px;
+    padding-top: 60px;
+    background-color: #4E0303;
+}
+
+.navbarContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0px 30px;
+} 
+
+.logo {
+    max-width: 30px;
+}
+
+.logoImg {
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 0 60px;
+}
+
+.navList {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.navLink {
+    text-decoration: none;
+}
+
+.navLink:hover {
+    font-weight: bold;
+    color: #FFF200;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+.mainImage {
+    width: 100%;
+    display: block;
+}
+
+.mainHeading {
+    position: absolute;
+    color: #DAD9D9;
+    font-size: 3em;
+    margin-top: 70px;
+}
+
+.oddHeading {
+    text-align: center;
+    color: #4E0303;
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.historyTable {
+    max-width: 1100px;
+    margin: 50px auto 30px auto;
+}
+
+.tableRow {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.historyTable :last-child {
+    margin-bottom: 0;
+}
+
+.date {
+    flex: 1;
+    font-size: 1.3em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: end;
+    color: #120404;
+}
+
+.episode {
+    flex: 4;
+}
+
+.evenHeading {
+    text-align: center;
+    color: #DAD9D9;
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.cardsContainer {
+    max-width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px auto 30px auto;
+}
+
+.card {
+    position: relative;
+    width: 340px;
+    height: 615px;
+    margin-bottom: 60px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #DAD9D9;
+}
+
+.cardsContainer :last-child {
+    margin-bottom: 0;
+}
+
+.closedCard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: white;
+    border: 2px solid #DAD9D9;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.closedCard:hover {
+    opacity: 0;
+}
+
+.closedCardImg {
+    width: 100%;
+}
+
+.driverImgWrapper {
+    padding: 15px;
+    padding-bottom: 0;
+    height: 369px;
+    overflow: hidden;
+}
+
+.driverImg {
+    width: 100%;
+}
+
+.driverName {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.driverInfo ul {
+    list-style-type: square;
+    text-align: justify;
+    padding-right: 40px;
+}
+
+.driverInfo li {
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.carsContainer {
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto 30px auto;
+}
+
+.car:nth-child(2n-1) {
+    align-self: flex-start;
+}
+
+.car:nth-child(2n) {
+    align-self: flex-end;
+}
+
+.car {
+    position: relative;
+    width: 700px;
+    border: 2px solid #FFF200;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px 0;
+    background-color: #4E0303;
+    margin-bottom: 60px;
+}
+
+.carsContainer :last-child {
+    margin-bottom: 0;
+}
+
+.carImg {
+    width: 98%;
+    vertical-align: middle;
+    border: 2px dotted #FFF200;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.car h3 {
+    position: absolute;
+    left: calc(50% - 30px);
+    margin: 0;
+    width: 60px;
+    color: #FFF200;
+    text-shadow: 0 0 3px black;
+}
+
+.car .odd {
+    bottom: 5%;   
+}
+
+.car .even {
+    top: 5%;   
+}
+
+.factsContainer {
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto 30px auto;
+}
+
+.fact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 500px;
+    background-color: #DAD9D9;
+    border: 2px solid black;
+    border-radius: 20px; 
+    margin-bottom: 60px;
+}
+
+.factsContainer :last-child {
+    margin-bottom: 0;
+}
+
+.factText {
+    text-align: center;
+    font-size: 24px;
+    padding: 0 45px;
+}
+
+.f1video {
+    width: 700px;
+    padding-top: 30px;
+}
+
+.factCover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #DAD9D9;
+    border: 2px solid #DAD9D9;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.factCover:hover {
+    opacity: 0;
+}
+
+.factImgWrapper {
+    height: 375px;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.factImg {
+    width: 300px;
+}
+
+.contactContainer {
+    max-width: 1100px;
+    margin: 50px auto 30px auto;
+}
+
+.contactForm {
+    width: 700px;
+    height: 500px;
+    border: 2px solid #4E0303;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto 30px auto;
+}
+
+.formItem {
+    width: 100%;
+    font-size: 18px;
+    color: #4E0303;
+    padding: 0 132px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.area {
+    width: 30%;
+    font-weight: bold;
+}
+
+.answer {
+    width: 60%;
+}
+
+.formButtons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button {
+    width: 100px;
+    height: 40px;
+    background-color: #4E0303;
+    border: 2px solid #4E0303;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #DAD9D9;
+}
+
+.infoBlock {
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.infoBlock p {
+    margin-top: 0;
+}
+
+.logoImgTwo {
+    width: 230px;
+    height: 80px;
+}
+
+.ferrariInfo, .creatorInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.creatorInfo {
+    text-align: end;
+}
+
+.importantInfo {
+    color: #FFF200;
+}
+
+.mediaInfo, .contactsInfo {
+    max-width: 150px;
+}
+
+.mediaList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contactsInfo {
+    align-self: flex-end;
+}
+
+.mediaItem {
+    padding-right: 15px;
+}
+
+.mediaList :last-child {
+    padding-right: 0;
+}
+
+.mediaLogo {
+    width: 30px;
+    height: 30px;
+} 
