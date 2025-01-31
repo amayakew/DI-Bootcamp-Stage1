@@ -3,6 +3,7 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -o-box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -14,7 +15,6 @@ body {
 
 .wrap {
     flex: 1;
-    scroll-behavior: smooth;
 }
 
 .navbarContainer, .infoBlock, .navLink {
@@ -43,7 +43,7 @@ body {
 } 
 
 .logo {
-    max-width: 30px;
+    width: 30px;
 }
 
 .logoImg {
@@ -72,19 +72,18 @@ body {
     color: #FFF200;
 }
 
-.main {
+.homePage {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: top;
 }
 
-.mainImage {
+.homeImage {
     width: 100%;
     display: block;
 }
 
-.mainHeading {
+.homeHeading {
     position: absolute;
     color: #DAD9D9;
     font-size: 3em;
@@ -265,12 +264,18 @@ body {
     margin: 50px auto 30px auto;
 }
 
+.factsPrompt {
+    color:#DAD9D9;
+    text-align: center;
+    display: none;
+}
+
 .fact {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1000px;
+    width: 100%;
     height: 500px;
     background-color: #DAD9D9;
     border: 2px solid black;
@@ -286,6 +291,10 @@ body {
     text-align: center;
     font-size: 24px;
     padding: 0 45px;
+}
+
+.f1videoYT {
+    display: none;
 }
 
 .f1video {
@@ -433,3 +442,117 @@ body {
     width: 30px;
     height: 30px;
 } 
+
+
+@media screen and (max-width: 1024px){
+    .navbar {
+        font-size: 1em;
+    }
+    .cardsContainer {
+        justify-content: space-evenly;
+    }
+    .closedCard {
+        display: none;
+    }
+    .car:nth-child(2n-1) {
+        align-self: center;
+    }
+    .car:nth-child(2n) {
+        align-self: center;
+    }
+    .factsPrompt {
+        display: block;
+    }
+    .logoImgTwo {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .logoImg {
+        width: 60%;
+    }
+    .navbar {
+        font-size: 0.7em;
+    }
+    .homeHeading {
+        font-size: 2em;
+        margin-top: 40px;
+    }
+    .ferrariLogoTwo {
+        display: none;
+    }
+    .infoBlock {
+        font-size: 0.9em;
+    }
+}
+
+
+@media screen and (max-width: 375px){
+    .navbarContainer {
+        justify-content: center;
+    }
+    .navbar, .factsPrompt, .factCover {
+        display: none;
+    }
+    .logoImg {
+        width: 40%;
+        vertical-align: middle;
+    }
+    .homeHeading, .factText {
+        font-size: 1em;
+    }
+    .homeHeading {
+        margin-top: 20px;
+    }
+    .historyBlock, .carsBlock, .contactBlock, .driversBlock, .factsBlock {
+        padding-top: 30px;
+    }
+    .oddHeading, .evenHeading, .historyTable, .factText, .formItem, .button {
+        font-size: 0.8em;
+    }
+    .cardsContainer, .carsContainer, .factsContainer, .contactContainer {
+        margin-top: 30px;
+    }
+    .cardsContainer {
+        max-width: 80%;
+    }
+    .card, .driverImgWrapper, .fact, .button {
+        height: auto;
+    }
+    .card, .car, .fact {
+        margin-bottom: 30px;
+    }
+    .driverName {
+        margin-top: 0;
+        font-size: 0.9em;
+    }
+    .driverInfo ul {
+        display: none;
+    }
+    .car, .contactForm {
+        width: 100%;
+    }
+    .factText {
+        padding: 45px;
+    }
+    .f1videoYT {
+        display: inline;
+        color: #120404;
+    }
+    .f1video {
+        display: none;
+    }
+    .contactForm {
+        height: 300px;
+    }
+    .formItem {
+        padding: 0 15px;
+    }
+    .infoBlock {
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 10%;
+        font-size: 0.7em;
+    }
+}

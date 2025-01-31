@@ -23,9 +23,9 @@
                     </ul>
                 </nav>
             </header>
-            <section class="main">
-                <h1 class="mainHeading">Scuderia Ferrari Formula 1 Team</h1>
-                <img src="./resources/images/other/wallpaper.jpg" alt="FerrariCar" class="mainImage">
+            <section class="homePage">
+                <h1 class="homeHeading">Scuderia Ferrari Formula 1 Team</h1>
+                <img src="./resources/images/other/wallpaper.jpg" alt="FerrariCar" class="homeImage">
             </section>
             <section class="historyBlock" id="history">
                 <h2 class="oddHeading">Significant Moments in the Team's History</h2>
@@ -270,6 +270,7 @@
             </section>
             <section class="factsBlock" id="facts">
                 <h2 class="evenHeading">More Facts About Scuderia Ferrari Team</h2>
+                <h4 class="factsPrompt">(click on the card to see the fact)</h4>
                 <div class="factsContainer">
                     <div class="fact">
                         <div class="factText">
@@ -308,14 +309,15 @@
                     </div>
                     <div class="fact">
                         <div class="factText">
-                            <span>If you want <b>to feel the vibes of Formula 1 racing</b> - watch this video:)</span><br><hr>
+                            <span>If you want <b>to feel the vibes of Formula 1 racing</b> - watch this <a href="https://www.youtube.com/watch?v=mdnF9R-Bzpg" class="f1videoYT" target="_blank">video</a>:)</span><br><hr>
                             <video src="./resources/video/f1.mp4" poster="./resources/images/other/wallpaper3.jpg" controls class="f1video"></video>
                         </div>
                     </div>
                 </div>  
             </section>
             <section class="contactBlock" id="contact">
-                <h2 class="oddHeading">If you still have questions about the F1 Ferrari Team, feel free to ask us:</h2>
+                <h2 class="oddHeading">Still have questions about the F1 Ferrari Team?</h2>
+                <h2 class="oddHeading">Feel free to ask us:</h2>
                 <div class="contactContainer">
                     <form class="contactForm" method="GET" action="#">
                         <div class="formItem">
@@ -329,7 +331,7 @@
                         <div class="formItem">
                             <label for="subject" class="area">Subject:</label>
                             <select id="subject" name="subject" required class="answer">
-                                <option value="" disabled selected>Choose the subject of your question</option>
+                                <option value="" disabled selected>Choose the subject</option>
                                 <option value="history">History</option>
                                 <option value="drivers">Drivers</option>
                                 <option value="cars">Race Cars</option>
@@ -403,3 +405,24 @@
         </footer>
     </body>
 </html>
+
+
+
+<!-- 1. Make the page responsive, you can use media query.
+    1.1. Breakpoints at 1024, 768, and 375 (min width)
+    1.2. Make sure it works smooth trough all resizes (bonus)
+2. Consolidate simmilar styles to "components", for example:
+    - homePage + driversBlock + factsBlock to: "container light-container"
+        historyBlock + carsBlock + contactBlock to: "container dark-red container"
+    - "closedCard" class to "containerOverlay"
+3. Find a way to make text in card with overlay Selectable (Bonus)
+
+Priority:
+    1.1 (display none to the overlays in mobile - ALWAYS)
+    
+Super duper bonus____
+    3
+    1.2
+    2
+    
+    try to chage font-size px and width/max-width to % or em or rem -->
